@@ -1,6 +1,6 @@
 /* Bravo */
 * {
-  font-family: 'Kanit', 'sans-serif';
+    font-family: 'Kanit', 'sans-serif';
 }
 
 
@@ -15,6 +15,7 @@
     margin: 0 auto;
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -61,4 +62,18 @@
 
 .parrales button:hover {
     background-color: #1e40af;
+}
+
+@media (max-width: 500px) {
+    .parrales {
+        padding: 20px 10px;
+    }
+
+    .parrales .contenedor {
+        padding: 20px;
+    }
+
+    .parrales button {
+        width: 100%;
+    }
 }
