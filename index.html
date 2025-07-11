@@ -1,22 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/assets/css/styles.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <section id="bravo">
 
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- TailwindCSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Flowbite -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/assets/css/styles.css">
+  <title>Document</title>
+</head>
 
-    <section id="zamora">
+<body>
+  <section id="bravo">
 
-    </section>
+  </section>
 
-    <section id="parrales">
+  <section id="zamora">
 
-    </section>
-  </body>
+  </section>
+
+  <section class="parrales">
+    <form class="contenedor">
+      <div class="grupo">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" placeholder="Tu nombre" required>
+      </div>
+      <div class="grupo">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required>
+      </div>
+      <div class="grupo">
+        <label for="message">Mensaje</label>
+        <textarea id="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer style="background-color: #C4E1E6; color: black;" class="rounded-lg shadow-sm m-4">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm sm:text-center" style="color: black;">
+        © 2025 <a href="https://flowbite.com/" style="color: black; text-decoration: none;"
+          onmouseover="this.style.textDecoration='underline'"
+          onmouseout="this.style.textDecoration='none'">Evaluacion</a>. All Code Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium sm:mt-0" style="color: black;">
+        <li>
+          <a href="#" style="color: black; text-decoration: none;" onmouseover="this.style.textDecoration='underline'"
+            onmouseout="this.style.textDecoration='none'" class="me-4 md:me-6">About</a>
+        </li>
+        <li>
+          <a href="#" style="color: black; text-decoration: none;" onmouseover="this.style.textDecoration='underline'"
+            onmouseout="this.style.textDecoration='none'">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
 </html>
